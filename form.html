@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+  <div id="container" class="container">
+    <h1 class="head">Create Account</h1>
+    <form action="/action_page.php" method="post" name="form" id="form" onsubmit="sConsole(event)">
+      <div class="form-control">
+        <label for="username">Firstname</label>
+        <input class="form-input" type="text" value="" name="values" id="Firstname" required>
+      </div>
+      <div class="form-control">
+        <label for="username">Lastname</label>
+        <input class="form-input" type="text" name="values" id="Lastname" required>
+
+      </div>
+      <div class="form-control">
+        <label for="username">Email</label>
+        <input class="form-input"   pattern="^[a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,15})$" type="text" name="Email" id="Email" required>
+  
+      </div>
+      <div class="form-control">
+        <label for="username">Phonenumber</label>
+        <input type="tel" pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" class="form-input" name="values" id="Phonenumber" required>
+      
+      </div>
+      <div class="form-control">
+        <label for="username">City</label>
+        <input type="text" class="form-input" name="values" id="City" required>
+    
+      </div>
+      <button type="submit" class="bu">Submit</button>
+      <button id="btn" class="bu" onClick="ipvalue(event)"type="button">click</button>
+      <div id="container" class="down"></div>
+    </form>
+  </div>
+
+
+  <script src="./form.js"></script>
+</body>
+
+</html>
+
+
